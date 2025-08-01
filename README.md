@@ -1,5 +1,7 @@
 # 2D Flow Matching in JAX
 
+![Flow trajectory visualization](trajectory.png)
+
 This notebook implements a simple 2D flow matching model using JAX, equinox and diffrax. It trains a neural network to learn the velocity field that transforms samples from a standard Gaussian distribution to a target checkerboard distribution.
 
 ## Overview
