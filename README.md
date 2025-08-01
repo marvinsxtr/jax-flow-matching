@@ -45,7 +45,7 @@ This implementation can be run using Docker or Apptainer containers for reproduc
    To open a tunnel to connect your local VSCode to the container on the cluster:
    
    ```bash
-   apptainer run --nv --writable-tmpfs oras://ghcr.io/marvinsxtr/d-flow:latest-sif code tunnel
+   apptainer run --nv --writable-tmpfs oras://ghcr.io/marvinsxtr/jax-flow-matching:latest-sif code tunnel
    ```
 
    In VSCode press `Shift+Alt+P` (Windows/Linux) or `Shift+Cmd+P` (Mac), type "connect to tunnel", select GitHub and select your named node on the cluster. Your IDE is now connected to the cluster.
