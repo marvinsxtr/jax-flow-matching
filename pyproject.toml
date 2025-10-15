@@ -12,21 +12,23 @@ dependencies = [
   "ipykernel>=6.30.0",
   "jax[cuda12]>=0.7.0",
   "jaxtyping>=0.3.2",
+  "lightning>=2.5.5",
   "matplotlib>=3.10.5",
   "numpy>=2.3.2",
   "optax>=0.2.5",
+  "torch>=2.9.0",
 ]
 
 [dependency-groups]
 dev = ["pre-commit>=4.0.1", "ruff>=0.8.0"]
 
 [tool.uv.sources]
-torch = [{ index = "pytorch-cu128", marker = "platform_system != 'Darwin'" }]
+torch = [{ index = "pytorch-cpu" }]
 
 [[tool.uv.index]]
 explicit = true
-name = 'pytorch-cu128'
-url = 'https://download.pytorch.org/whl/cu128'
+name = 'pytorch-cpu'
+url = 'https://download.pytorch.org/whl/cpu'
 
 [tool.ruff]
 line-length = 119
